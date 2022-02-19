@@ -1,0 +1,485 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: Roboto;
+	color: black;
+}
+
+@font-face {
+  font-family: 'JosefinSans-Bold';
+  src: url('../fonts/JosefinSans-Bold.woff') format('woff'),
+       url('../fonts/JosefinSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JosefinSans-BoldItalic';
+  src: url('../fonts/JosefinSans-BoldItalic.woff') format('woff'),
+       url('../fonts/JosefinSans-BoldItalic.ttf') format('truetype');
+}
+
+.row {
+    --bs-gutter-x: 0rem; 
+}
+
+.button {
+	background-color: white;
+	border-color: #3C72A7;
+	border-radius: 15px;
+}
+
+.button:hover {
+	background: linear-gradient(90deg, white, #FBFDB4)
+}
+
+.josefin-sans-bolditalic {
+	font-family: JosefinSans-BoldItalic;
+}
+
+.josefin-sans-bold {
+	font-family: JosefinSans-Bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.menu, .menu a {
+	font-weight: bold;
+	list-style-type: none;
+	text-decoration: none;
+	color: black;
+}
+
+#logo {
+	padding: 0px 20px;
+}
+
+.resume a {
+	font-style: italic;
+	text-decoration: none;
+	color: grey !important;
+	font-weight: lighter;
+}
+
+#navbar {
+	background: rgba(255, 255, 255, 0.7);
+	padding-top: 10px;
+	padding-bottom: 5px;
+	position: fixed;
+	top: 0;
+	transition: top 0.3s;
+	max-width: 100vw;
+}
+
+.nav-item {
+	padding: 0px 25px;
+}
+
+.nav-link {
+	color: black !important;
+}
+
+.navbar-toggler {
+	float: right !important;
+	border: none;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../images/menu.png") !important;
+}
+
+#home, #about, #work, #contact {
+	height: 100vh;
+}
+
+.small {
+	background-color: #73CFDA;
+	width: 100vw;
+	height: 100vh;
+}
+
+.white-bg {
+	background-color: white;
+}
+
+.home-left {
+	background-color: #73CFDA;
+}
+
+.image {
+	object-fit: contain;
+}
+
+.home-right {
+	padding-top: 40vh;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 40vh;
+}
+
+.about-right {
+	background: linear-gradient(to bottom right, #bfeef5, #89e9f5);
+	/*background-color: #89e9f5;*/
+}
+
+.work-left {
+	background: linear-gradient(to bottom right, #fdff9c, #FCFF84);
+/*	background-color: #FCFF84;*/
+}
+
+.contact-right {
+	background: linear-gradient(to bottom right, #26edc7, #06C6A1);
+	/*background-color: #06C6A1;*/
+}
+
+
+#home-image {
+	height: 80vh;
+	width: auto;
+	padding-right: 10%;
+	padding-top: 10%;
+}
+
+.surname {
+	font-size: 7.4vw;
+}
+
+
+/* ABOUT SECTION */
+
+.about-left-content {
+	padding-left: 5%;
+}
+
+.ul-skills {
+	padding-left: 10%;
+}
+
+.ul-skills li {
+	float: left;
+	font-weight: bold;
+}
+
+.portrait {
+	width: 20vw;
+	height: auto;
+	box-shadow: 15px 15px #FBFDB4;
+}
+
+.portrait:hover {
+	filter: drop-shadow(8px 8px 8px white);
+}
+
+/* WORK SECTION */
+
+.work-left-content, .work-right-content {
+	padding-left: 10%;
+}
+
+#desktop-mockup {
+	width: 30vw;
+	height: auto;
+}
+
+#ca {
+	width: 12vw;
+	height: auto;
+}
+
+#phone-mockup {
+	width: 10vw;
+	height: auto;
+}
+
+.work-ul {
+	font-weight: bold;
+}
+
+#a-gh {
+	color: black;
+}
+
+#a-gh:hover {
+	color: #73CFDA;
+}
+
+
+
+/* CONTACT SECTION */
+
+.ul-contact li {
+	list-style-type: none;
+	padding-top: 5%;
+}
+
+li a {
+	color: black;
+	text-decoration: none;
+}
+
+.ul-contact li a:hover {
+	color: white;
+}
+
+.contact-left-content, .contact-right-content {
+	padding-left: 15%;
+}
+
+.text {
+	max-width: 90%;
+}
+
+
+@media (min-width: 2000px) {
+	#phone-mockup {
+		width: 8vw;
+		height: auto;
+	}
+}
+
+@media (min-width: 767px) {
+	.work-left-content {
+		padding-top: 13%;
+	}
+
+	.home-left, .home-right, .about-left, .about-right, .work-left, .work-right, .contact-left, .contact-right {
+		height: 100vh;
+	}
+}
+
+@media (max-width: 992px) {
+	.ul-contact a {
+		font-size: 80%;
+	}
+
+	.fa-3x {
+		font-size: 1.5rem !important;
+	}
+}
+
+@media (max-width: 767px) {
+	#navbar {
+		background: transparent;
+	}
+
+	.work-left-content {
+		padding-top: 5%;
+	}
+
+	.home-right {
+		/*background-color: #73CFDA;*/
+		background-image: url("../images/bg-480w.png");
+		color: white;
+	}
+
+	.name, .surname, .contact-sm h1 {
+		text-shadow: 2px 2px 9px black;
+	}
+
+	.nav-link {
+		float: right;
+	}
+
+	.surname {
+		font-size: 12vw;
+	}
+
+	.name {
+		font-size: 6vw;
+	}
+
+	#description {
+		font-size: 4vw;
+	}
+
+	.home-right {
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+
+	.greeting {
+		background: linear-gradient(90deg, #3C72A7, #06C6A1);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+
+	#home, #contact {
+		height: 100vh;
+	}
+
+	.about-left {
+		height: 65vh;
+		padding: 10% 0 0 10%;
+	}
+
+	.about-right {
+		height: 35vh;
+		background: linear-gradient(white, #73CFDA)
+	}
+
+	.ul-skills {
+		padding-bottom: 0px;
+	}
+
+	#work {
+		height: 126vh;
+	}
+
+	.work-left {
+		height: 50vh;
+	}
+
+	.work-right {
+		height: 76vh;
+	}
+
+	.portrait {
+		width: 50vw;
+		height: auto;
+		box-shadow: 5px 5px #FBFDB4;
+	}
+
+	.work-left {
+		background: background: linear-gradient(white, #FCFF84);
+	}
+
+	.work-right {
+		background: linear-gradient(#FCFF84, white);
+	}
+
+	.contact-right {
+		background: linear-gradient(#06C6A1, white);
+	}
+
+	#desktop-mockup {
+		width: 85vw;
+		height: auto;
+	}
+
+	#phone-mockup {
+		width: 30vw;
+		height: auto;
+	}
+
+	.worktext {
+		margin-left: 5vw;
+	}
+
+	#ca {
+		width: 30vw;
+		height: auto;
+	}
+
+	.work-separation {
+		padding-top: 3vh;
+	}
+
+	.contact-right {
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+
+	.contact-right-content {
+		padding-left: 0px;
+	}
+
+	.contact-sm h1 {
+		color: white;
+	}
+
+	.copyright {
+	padding-left: 5%;
+	}
+
+	.totop {
+		padding-right: 5%;
+	}
+}
+
+@media(min-width: 462px) and (max-width: 538px) {
+	#work {
+		height: 136vh;
+	}
+
+	.work-left {
+		height: 60vh;
+	}
+
+	.portrait {
+		width: 40vw;
+		height: auto;
+	}
+}
+
+@media(min-width: 539px) and (max-width: 614px) {
+	.portrait {
+		width: 30vw;
+		height: auto;
+	}
+
+	#work {
+		height: 146vh;
+	}
+
+	.work-left {
+		height: 70vh;
+	}
+
+	#phone-mockup {
+		width: 20vw;
+		height: auto;
+	}
+
+	#ca {
+		width: 20vw;
+		height: auto;
+	}
+}
+
+@media(min-width: 615px) and (max-width: 767px){
+	.portrait {
+		width: 20vw;
+		height: auto;
+	}
+
+	#work {
+		height: 156vh;
+	}
+
+	.work-left {
+		height: 80vh;
+		padding-top: 0px;
+	}
+
+	#desktop-mockup {
+		width: 65vw;
+		height: auto;
+	}
+
+	#phone-mockup {
+		width: 20vw;
+		height: auto;
+	}
+
+	#ca {
+		width: 20vw;
+		height: auto;
+	}
+}
+
+@media (max-width: 368px) {
+	#phone-mockup {
+		max-height: 200px;
+	}
+	
+	.ul-contact {
+		padding-left: 5%;
+	}
+}
