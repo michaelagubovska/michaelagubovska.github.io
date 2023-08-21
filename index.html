@@ -1,231 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Michaela Gubovská's portfolio">
-  	<meta name="author" content="Michaela Gubovská">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Michaela Gubovská's portfolio" />
+    <meta name="author" content="Michaela Gubovská" />
 
-  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  	<link rel="stylesheet" href="src/style.css">
-  	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-	<link rel="icon" type="image/x-icon" href="images/logo.png">
-	<title>Michaela Gubovská</title>
-</head>
+    <link rel="icon" type="image/x-icon" href="images/logo.svg" />
+    <title>Michaela Gubovská</title>
+  </head>
 
-<body>
-	<!-- Header with navigation -->
-	<header class="container-fluid p-0">
-		<nav id="navbar" class="container-fluid row navbar-expand-md navbar-light pt-1">
-			<a href="#home" aria-label="home" class="navbar-brand col-md-2 col-10 m-0 d-flex justify-content-start">
-				<img src="images/logo.png" id="logo" class="pr-3" alt="logo">
-			</a>
-
-			<button type="button" data-toggle="collapse" data-target="#navbarNav" class="navbar-toggler col-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Show menu" onclick="changeBackcolor()">
-                <span class="navbar-toggler-icon"></span>
+  <body>
+    <!-- Header with navigation -->
+    <header>
+      <nav class="navbar navbar-wrapper" id="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle navbar-btn" data-toggle="collapse" data-target="#myNavbar">
+              <span class="navbar-toggler-icon"></span>                   
             </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link raleway-bold active" href="#home">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link raleway-bold" href="#work">work</a>
+              </li>
+              <li class="nav-item nav-item--asterisk">
+                <img src="images/Asterisk.svg" />
+              </li>
+              <li class="nav-item">
+                <a class="nav-link raleway-bold" href="#contact">contact</a>
+              </li>
+              <li class="nav-item nav-item--resume">
+                  <a
+                    class="nav-link raleway-bold"
+                    href="gubovska_resume.pdf"
+                    download="gubovska_resume.pdf"
+                    >resume
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="white"
+                      class="bi bi-download download-icon"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                      />
+                      <path
+                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                      />
+                    </svg>
+                  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- <nav id="navbar" class="navbar-expand-md navbar-wrapper">
+        <button
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          class="navbar-toggler col-2"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Show menu"
+          onclick="changeBackcolor()"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-			<div class="collapse navbar-collapse col-md-10 col-9 justify-content-end" id="navbarNav">
-				<ul class="menu navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="#home">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#work">Work</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-					<li class="nav-item resume">
-						<a class="nav-link" href="gubovska_resume.pdf" download="gubovska_resume.pdf">Resume</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="menu navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link raleway-bold active" href="#home">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link raleway-bold" href="#work">work</a>
+            </li>
+            <li class="nav-item nav-item--asterisk">
+              <img src="images/Asterisk.svg" />
+            </li>
+            <li class="nav-item">
+              <a class="nav-link raleway-bold" href="#contact">contact</a>
+            </li>
+            <li class="nav-item nav-item--resume">
+              <span>
+                <a
+                  class="nav-link raleway-bold"
+                  href="gubovska_resume.pdf"
+                  download="gubovska_resume.pdf"
+                  >resume
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="white"
+                    class="bi bi-download"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                    />
+                    <path
+                      d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                    />
+                  </svg>
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+    </header>
 
-	<!-- Main content -->
-	<main class="container-fluid p-0">
-		<!-- Home section -->
-		<section id="home" class="container-fluid row p-0">
-			<div class="col-12 col-md-6 d-none d-md-flex justify-content-center home-left">
-				<img srcset="images/bg-480w.png 480w,
-				             images/bg-fullhd.png 1024w"
-				     sizes="(max-width: 1024px) 480px,
-				            1024px"
-				     src="images/bg-fullhd.png"
-				     alt="background" id="bg" class="image">
-			</div>
+    <!-- Main content -->
+    <main class="">
+      <!-- Home section -->
+      <section id="home" class="home-section">
+        <div class="home-section__content">
+          <div class="home-section__title-large-wrapper">
+            <h2 class="raleway-black--italic home-section__title--large-name">
+              Michaela
+            </h2>
+            <h2
+              class="raleway-black--italic home-section__title--large-surname"
+            >
+              Gubovská
+            </h2>
+          </div>
+          <div class="home-section__glass-card-wrapper">
+            <div class="home-section__glass-card">
+              <div class="home-section__title-wrapper">
+                <h2
+                  class="raleway-black--italic home-section__title home-section__title--name"
+                >
+                  Michaela
+                </h2>
+                <h2
+                  class="raleway-black--italic home-section__title home-section__title--surname"
+                >
+                  Gubovská
+                </h2>
+              </div>
+              <div class="home-section__text-wrapper">
+                <p class="raleway-semi-bold--italic home-section__text">
+                  web developer
+                </p>
+                <p class="raleway-semi-bold--italic home-section__text">
+                  UX/UI enthusiast
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="home-section__bg-wrapper">
+          <img src="images/home-wave.svg" class="section__bg-img" />
+        </span>
+      </section>
 
-			<div class="col-12 col-md-6 home-right-content home-right white-bg">
-				<h1 class="josefin-sans-bold h2 name">Michaela</h1>
-				<h2 class="josefin-sans-bolditalic surname d-flex justify-content-end">GUBOVSKÁ</h2>
-				<p class="italic d-flex justify-content-end" id="description">web developer / UI / UX / AI enthusiast</p>
-			</div>
-		</section>
+      <!-- Work section -->
+      <section id="work" class="work-section">
+        <div class="work-section__hover">
+          <p class="work-section__hover-text raleway-semi-bold--italic">
+            hover over me!
+          </p>
+        </div>
+        <div class="work-section__cards-wrapper">
+          <div class="work-section__card">
+            <div class="work-section__card-mockup--static">
+              <img src="images/neurai-mockup.svg" class="work-section__card-mockup-device"/>
+            </div>
+            <div class="work-section__card-spacer"></div>
+            <p class="work-section__card-skill raleway-bold--italic">
+              HTML5 + Sass
+            </p>
+            <p class="work-section__card-skill raleway-bold--italic">Vue.js</p>
+            <p class="work-section__card-skill raleway-bold--italic">
+              TypeScript
+            </p>
+            <p class="work-section__card-skill raleway-bold--italic">Axios</p>
+            <p class="work-section__card-text raleway-regular">
+              <a href="https://touchit.sk/505923-2/505923">A reactive web app for neurosurgeons</a> developed in collaboration
+              with my teammates as a school project. My responsibilities
+              included developing the frontend and UX/UI design.
+            </p>
+          </div>
+          <div class="work-section__card work-section__card--animated">
+            <div class="work-section__card-mockup--animated" id="work-section__card-mockup--animated">
+              <img src="images/desktop-mockup.svg" class="work-section__card-mockup-device"/>
+              <div class="work-section__card-mockup-img"></div>
+            </div>
+            <div class="work-section__card-spacer"></div>
+            <p class="work-section__card-skill raleway-bold--italic">
+              HTML5 + Less
+            </p>
+            <p class="work-section__card-skill raleway-bold--italic">
+              JavaScript
+            </p>
+            <p class="work-section__card-skill raleway-bold--italic">jQuery</p>
+            <p class="work-section__card-skill raleway-bold--italic">Laravel</p>
+            <p class="work-section__card-text raleway-regular">
+              An example of my work at <a href="https://www.ui42.sk/">ui42 digital agency</a>. I worked as a part-time full-stack
+              developer, mainly focused on implementing the new design of the
+              agency’s website.
+            </p>
+          </div>
+        </div>
+        <span class="work-section__bg-wrapper">
+          <img src="images/work-wave.svg" class="section__bg-img" />
+        </span>
+      </section>
 
-		<!-- About section -->
-		<section id="about" class="container-fluid row p-0">
-			<div class="col-12 col-md-6 d-flex align-items-center justify-content-center about-left-content white-bg about-left">
-				<article class="about-article">
-					<h1 class="josefin-sans-bold italic greeting">Hello, I'm Michaela!</h1>
-					<p class="text">I’m a student at the Slovak University of
-						Technology, Faculty of Informatics and 
-						Information Technologies.</br>
+      <!-- Contact section -->
+      <section id="contact" class="contact-section">
+        <div class="contact-section__card-wrapper">
+          <div class="contact-section__card">
+            <div class="contact-section__card-id">
+              <img src="images/me.png" class="contact-section__card-img" />
+              <div class="">
+                <p class="raleway-bold contact-section__card-name">
+                  Michaela Gubovská
+                </p>
+                <p class="raleway-bold--italic contact-section__card-position">
+                  web developer
+                </p>
+              </div>
+            </div>
+            <ul class="contact-section__card-contacts-list">
+              <li class="contact-section__card-contacts-list-item">
+                <i class="far fa-envelope fa-3x contact-section__icon"></i>
+                <a
+                  href=""
+                  aria-label="email address"
+                  class="contact-section__link raleway-bold"
+                >
+                michaela.gubovska@gmail.com</a
+                >
+              </li>
 
-						I’ve always been interested in technology and
-						that’s the reason I chose to pursue a career in IT.</br>
-						I am a quick learner and a great problem solver.
+              <li class="contact-section__card-contacts-list-item">
+                <i class="fab fa-github fa-3x contact-section__icon"></i>
+                <a
+                  href="https://github.com/michaelagubovska"
+                  aria-label="GitHub"
+                  class="contact-section__link raleway-bold"
+                >
+                  github.com/michaelagubovska</a
+                >
+              </li>
 
-						During my studies I’ve discovered my passion for
-					</p>
-					<div class="row">
-						<ul class="ul-skills">
-							<li class="col-6 italic">UX</li>
-							<li class="col-6 italic">UI development</li>
-							<li class="col-6 italic">AI</li>
-							<li class="col-6 italic">data science</li>
-						</ul>
-					</div>
+              <li class="contact-section__card-contacts-list-item">
+                <i class="fab fa-linkedin fa-3x contact-section__icon"></i>
+                <a
+                  href="https://www.linkedin.com/in/michaelagubovska/"
+                  aria-label="linkedin"
+                  class="contact-section__link raleway-bold"
+                >
+                linkedin.com/in/michaelagubovska</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span class="contact-section__bg-wrapper">
+          <img src="images/contact-wave.svg" class="section__bg-img" />
+        </span>
+      </section>
+    </main>
 
-					<p class="text">
-						These are some technologies and languages
-						I enjoy working with
-					</p>
-					<div class="row">
-						<ul class="ul-skills">
-							<li class="col-6 italic">Python</li>
-							<li class="col-6 italic">PHP (Laravel)</li>
-							<li class="col-6 italic">Django</li>
-							<li class="col-6 italic">Figma</li>
-							<li class="col-6 italic">Bootstrap</li>
-						</ul>
-					</div>
-				</article>
-			</div>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-section__copyright raleway-regular">
+          Designed and built by Michaela Gubovská
+        </div>
+      </div>
+    </footer>
 
-			<div class="col-12 col-md-6 m-0 d-flex align-items-center justify-content-center about-right">
-				<img src="images/me.png" class="portrait">
-			</div>
-		</section>
-
-		<!-- Work section -->
-		<section id="work" class="container-fluid row p-0">
-			<div class="work-left col-12 col-md-6 d-flex justify-content-center align-items-center">
-				<article class="work-left-content pt-lg-5">
-					<h1 class="m-0 josefin-sans-bolditalic">Web development</h1>
-					<div class="col-12 d-flex justify-content-start">
-						<img id="desktop-mockup" src="images/desktop_mockup.png" alt="desktop site mockup">
-					</div>
-
-					<p class="text-wrap text">I was part of a team project where we created
-					an e-commerce store using</p>
-
-					<ul class="work-ul">
-						<li>PHP Laravel framework</li>
-						<li>PostgreSQL</li>
-					</ul>
-				</article>
-			</div>
-
-			<div class="work-right white-bg col-12 col-md-6 d-flex justify-content-center align-items-center">
-				<article class="work-right-content">
-					<div class="row">
-						<h1 class="col-12 josefin-sans-bolditalic">UX design</h1>
-						<div class="col-4">
-							<img id="phone-mockup" src="images/phone_mockup.png" alt="mobile phone mockup">
-						</div>
-						<p class="col-6 d-flex align-items-center text-wrap text worktext">I enjoy human-centered design.
-						I believe great products come with an enjoyable user interface.
-						Using a product should be a pleasant experience and I strive to
-						achieve it with my work.</p>
-					</div>
-
-					<div class="row work-separation">
-						<h1 class="col-12 josefin-sans-bolditalic pt-md-5">Machine learning</h1>
-						<div class="col-4">
-							<img id="ca" src="images/ca1.png" alt="cellular automaton art">
-						</div>
-						<p class="col-6 text-wrap text worktext">AI has always
-							been one of my interests. I implemented cellular automata
-							generating art as a summer project.
-							More CA generated art can be found on my <a id="a-gh" href="https://github.com/michaelagubovska/cellular-automata-art">github</a>.
-						</p>
-					</div>
-				</article>
-			</div>
-		</section>
-
-		<!-- Contact section -->
-		<section id="contact" class="container-fluid row p-0">
-			<div class="d-flex">
-				<div class="col-12 col-md-6 contact-left white-bg d-none d-md-flex align-items-center">
-					<article class="contact-left-content">
-						<h1 class="josefin-sans-bolditalic">Get in touch with me!</h1>
-						<p class="text-wrap text">I’m looking for opportunities to learn
-							something new preferably in the area
-							of web development, UX design or
-							machine learning.
-						</p>
-					</article>
-				</div>
-
-				<div class="col-12 col-md-6 contact-right d-flex align-items-center">
-					<article class="contact-right-content">
-						<section class="d-md-none">
-							<article class="contact-sm">
-								<h1 class="josefin-sans-bolditalic">Get in touch with me!</h1>
-								<p class="text-wrap text">I’m looking for opportunities to learn
-									something new preferably in the area
-									of web development, UX design or
-									machine learning.
-								</p>
-							</article>
-						</section>
-
-						<ul class="ul-contact row">
-							<li class="row">
-								<a href="" aria-label="email address" class="col-10 d-flex align-items-center">
-								<i class="col-2 far fa-envelope fa-3x"></i>michaela.gubovska@gmail.com</a>
-							</li>
-
-							<li class="row">
-								<a href="https://github.com/michaelagubovska" aria-label="GitHub" class="col-10 d-flex align-items-center">
-									<i class="col-2 fab fa-github fa-3x"></i>github.com/michaelagubovska</a>
-							</li>
-
-							<li class="row">
-								<a href="https://www.linkedin.com/in/michaelagubovska/" aria-label="linkedin" class="col-10 d-flex align-items-center">
-									<i class="col-2 fab fa-linkedin fa-3x"></i>linkedin.com/in/michaelagubovska</a>
-							</li>
-						</ul>
-					</article>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<!-- Footer -->
-	<footer class="container-fluid p-2">
-		<div class="row align-items-center mt-3 mb-3 g-0">
-			<div class="col-12 col-md-10 justify-content-center d-flex copyright">
-				Designed, illustrated and built by Michaela Gubovská
-			</div>
-			<div class="col-12 col-md-2 justify-content-center justify-content-md-start d-flex totop">
-				<button onclick="topFunction()" id="topBtn" aria-label="Go to top" class="italic button g-0">Back to the top</button>
-			</div>
-			</div>
-	</footer>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  	<script src="src/web.js" type="text/javascript"></script>
-
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/web.js" type="text/javascript"></script>
+  </body>
 </html>
