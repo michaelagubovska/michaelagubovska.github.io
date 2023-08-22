@@ -189,6 +189,7 @@ a:hover {
 #work,
 #contact {
   height: 100vh;
+  position: relative;
 
   @media (max-width: 600px) {
     margin-bottom: -1px;
@@ -197,7 +198,7 @@ a:hover {
 
 @media (max-width: 600px) {
   #work {
-    height: auto;
+    height: 100%;
     padding-bottom: 30px;
   }
 }
@@ -427,12 +428,8 @@ a:hover {
 .work-section__bg-wrapper {
   width: 100%;
   position: absolute;
-  bottom: -100vh;
+  bottom: 0;
   z-index: 1;
-
-  @media (max-width: 600px) {
-    bottom: -150vh;
-  }
 }
 
 .work-section__cards-wrapper {
@@ -581,12 +578,8 @@ a:hover {
 .contact-section__bg-wrapper {
   width: 100%;
   position: absolute;
-  bottom: -200vh;
+  bottom: 0;
   z-index: 1;
-
-  @media (max-width: 600px) {
-    bottom: -250vh;
-  }
 }
 
 .contact-section__card {
@@ -733,6 +726,8 @@ a:hover {
   justify-content: center;
   margin-top: -1px;
   padding-bottom: 12px;
+  position: relative;
+  z-index: 10;
 }
 
 .footer-section__copyright {
